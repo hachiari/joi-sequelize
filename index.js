@@ -11,7 +11,7 @@ let JoiSequelize = function(model) {
     define: require('./lib/define').bind(this)
   };
   this.datatypes = require('./lib/datatypes');
-  model(this.sequelize, this.datatypes);
+  // model(this.sequelize, this.datatypes);
 };
 
 _.merge(JoiSequelize.prototype, fn);
